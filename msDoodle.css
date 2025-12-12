@@ -1,0 +1,89 @@
+/* styles.css */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background-color: #fff;
+}
+body, html {
+    overflow: hidden;     /* Stop page from moving */
+    touch-action: none;   /* Fix scrolling & zoom shaking */
+}
+
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:#222;
+    color:#fff;
+    padding:10px;
+    display:flex;
+    gap:10px;
+    align-items:center;
+    z-index:9999;
+}
+
+canvas {
+    position:absolute;
+    top:70px; /* space so toolbar isn’t covered */
+    left:0;
+}
+h1 {
+  font-size: 80px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+  font-family: verdana;
+  font-size: 30px;
+
+}
+button.active, label.active, input.active{
+    background: #00c3ff;
+    color: #fff;
+    border: 2px solid #000;
+
+}
+#cursorPreview {
+    visibility: hidden;    /* still exists & usable */
+    pointer-events: none;  /* no clicking */
+    position: absolute;    /* prevents layout shifts */
+}
+/* Toolbar visible and never covered by canvas */
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:#000;
+    padding:10px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;        /* ← makes tools visible even if many */
+    z-index: 9999;
+}
+
+/* Canvas starts below toolbar */
+canvas {
+    position:absolute;
+    top:70px;              /* space for toolbar */
+    left:0;
+}
+
+/* make file input clickable */
+#imageUpload {
+    background:#fff;
+    color:#000;
+    padding:5px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+#backgroundCanvas { z-index:1; }
+#drawingCanvas    { z-index:2; } /* your drawing happens here */
+
+
