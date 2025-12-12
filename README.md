@@ -6,7 +6,7 @@ Use eraser to remove unwanted parts. and eraser slider to increase or decrease s
 <img width="1507" height="862" alt="Screenshot (1090)" src="https://github.com/user-attachments/assets/bef87da9-3ced-4de0-9989-e15782ed1ff7" />
 
 Use bucket to fill in colors
-<img width="1566" height="813" alt="Screenshot (1087)" src="https://github.com/user-attachments/assets/bc0b64dd-cff6-45cf-9440-86dcc010bc9c" />
+<img width="1677" height="759" alt="Screenshot (1091)" src="https://github.com/user-attachments/assets/84702873-7e4e-4d2b-a616-bd0e07294736" />
 
 Upload an image to trace it, remove image, merge image and doodle when you save or save only imgae if you remove image.
 
