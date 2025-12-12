@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    <title>my site</title>
+        <link rel="stylesheet" href="msDoodle.css">  
+        
+    </head> 
+<body>
+    <div class="toolbar">
+    <button id="pen">Pen</button>
+    <button id="eraser">Eraser</button>
+    <button id="bucket">Bucket</button>
+    <button id="clear">Clear</button>
+    <button id="undo">Undo</button>
+    <button id="redo">Redo</button>
+    <button id="smoothToggle">Smooth: ON</button>
+
+    <label> Color <input type="color" id="colorPicker"> </label>
+    <label> Pen <input type="range" id="penSize" min="1" max="40" value="5"></label>
+    <label> Eraser <input type="range" id="eraserSize" min="5" max="60" value="10"></label>
+
+    <button id="undoBg">Undo Image</button>
+    <button id="redoBg">Redo Image</button>
+
+    <input type="file" id="imageUpload" accept="image/*">
+    <button id="removeImage">Remove Image</button>
+
+    <select id="saveFormat">
+        <option value="png">PNG</option>
+        <option value="jpg">JPG</option>
+        <option value="pdf">PDF</option>
+    </select>
+
+    <button id="saveImage">Save</button>
+</div>
+<canvas id="backgroundCanvas"></canvas> <!-- uploaded image -->
+<canvas id="drawingCanvas"></canvas>    <!-- drawing strokes -->
+<canvas id="cursorPreview"></canvas>    <!-- brush preview -->
+
+
+    
+   
+</body>
+<script src="msDoodle.js"></script> 
+</html>
